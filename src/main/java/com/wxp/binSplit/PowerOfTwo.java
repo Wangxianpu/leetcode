@@ -1,4 +1,4 @@
-package com.wxp.sort;
+package com.wxp.binSplit;
 
 /**
  * @Author : shampoowang
@@ -13,7 +13,7 @@ public class PowerOfTwo {
 
 
     private boolean isBig(long x ,long y){
-        return (long)x*x > y;
+        return (long)x*x <= y;
     }
 
     //注意区间的问题，[)
@@ -23,7 +23,7 @@ public class PowerOfTwo {
         long result = 0;
         while(left < right){
             long temp = (left+right)/2;
-            if(!isBig(temp,x)){
+            if(isBig(temp,x)){
                 left = temp+1;
                 result = temp;
             }else{
@@ -32,6 +32,4 @@ public class PowerOfTwo {
         }
         return (int)result;
     }
-
-
 }
