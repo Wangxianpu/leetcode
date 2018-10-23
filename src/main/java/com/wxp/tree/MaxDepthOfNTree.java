@@ -22,6 +22,7 @@ public class MaxDepthOfNTree {
             if(deep > max){
                 max = deep;
             }
+            return;
         }
         deep++;
         for(Node node : root.children){
