@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @description: 杨辉三角II 根据特定下标返回具体的某一列数据
- * @author: wxp
+ * @author: wxp 
  * @time: 2022/4/7 15:09
  */
 public class PascalTriangleII_119 {
